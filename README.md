@@ -1,132 +1,144 @@
-# Privacy Policy — SpendWise
+# SpendWise — Privacy Policy
 
-**Last updated:** March 21, 2026
-**Effective date:** March 21, 2026
+**Effective Date:** 2026-03-21
+**Last Updated:** 2026-03-21
+**Version:** 1.0.0
 
-This Privacy Policy describes how **SudarshanTechLabs** ("we", "us", or "our") handles information in connection with the **SpendWise** mobile application ("the App") available on Google Play.
-
----
-
-## 1. Data Collection
-
-**SpendWise does not collect, transmit, or store any personal data on external servers.**
-
-All data you enter — transactions, budgets, categories, receipt photos, and preferences — is stored exclusively on your device in an encrypted local database. We have no access to this data at any time.
-
-We do **not** collect:
-- Names, email addresses, or contact information
-- Financial account numbers or banking credentials
-- Location data
-- Device identifiers or advertising IDs
-- Usage analytics or crash reports sent to our servers
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-## 2. Data You Provide
+SpendWise is a personal expense tracking app for Android. It helps you log transactions, set budgets, scan receipts with OCR, and analyse your spending through charts. All financial data is stored exclusively on your device in an AES-256 encrypted database. Sudarshan Tech Labs does not collect or transmit your financial data.
 
-The App stores the following data **locally on your device only**:
+---
 
-| Data Type | Purpose | Storage |
+## Data Collection
+
+### Data Stored Locally on Your Device
+
+| Data | Purpose | Storage |
 |---|---|---|
-| Expense transactions | Core app function | Encrypted local DB |
-| Budget limits | Budget tracking | Encrypted local DB |
-| Receipt photos | OCR scanning | Device local storage |
-| App preferences | Personalisation | Encrypted shared prefs |
-| PIN / biometric settings | Security | Encrypted shared prefs |
+| Expense transactions (amount, category, date, notes) | Core expense tracking | Room database (SQLCipher AES-256 encrypted) |
+| Budget limits per category | Budget tracking | Room database (SQLCipher AES-256 encrypted) |
+| Transaction categories and tags | Organisation | Room database (SQLCipher AES-256 encrypted) |
+| Receipt photos | OCR scanning and record keeping | App private storage |
+| App preferences and security settings | Personalisation | EncryptedSharedPreferences |
+| PIN configuration (if set) | App lock | EncryptedSharedPreferences |
+| Biometric auth preference | App lock | EncryptedSharedPreferences |
+
+No financial data is transmitted to Sudarshan Tech Labs or any external server.
+
+### OCR Receipt Scanning
+
+When you scan a receipt, SpendWise uses Google ML Kit Text Recognition to extract text. ML Kit processes the image entirely on your device — no image or text is sent to Google or any server.
 
 ---
 
-## 3. Camera Permission
+## How We Use Your Data
 
-SpendWise requests camera permission **only** to scan receipts using the built-in OCR feature. Photos are processed on-device and are never uploaded to any server.
-
-Camera access is optional — you can use the App fully without granting camera permission.
-
----
-
-## 4. Storage Permission
-
-On Android 9 (API 28) and below, the App requests storage permission to save exported CSV files to your device. On Android 10 and above, no storage permission is required.
-
----
-
-## 5. Biometric Permission
-
-SpendWise requests biometric permission to enable fingerprint or face unlock as an optional app security feature. Biometric data is managed entirely by your device's operating system and is never accessed by us.
+| Purpose | Data Used |
+|---|---|
+| Log and display expense transactions | Local encrypted transactions |
+| Track budgets and spending limits | Local budget data |
+| Scan receipts for automatic amount entry | On-device OCR (ML Kit) |
+| Display spending charts and trends | Local transaction history |
+| Export transaction history to CSV | Local data (on-device only) |
+| Send bill reminder notifications | Local WorkManager schedules |
+| Lock the App with biometric or PIN | Android Biometric API / local PIN hash |
 
 ---
 
-## 6. Notifications Permission
+## Data Storage and Security
 
-On Android 13 (API 33) and above, the App requests permission to send local notifications for bill reminders you configure. No notification content is sent to external servers.
+- **Database:** AES-256 encrypted via SQLCipher — your financial data is encrypted at rest
+- **Preferences:** AES-256 encrypted via Android Security Crypto (EncryptedSharedPreferences)
+- **Receipt photos:** Stored in the App's private directory, inaccessible to other apps
+- **Biometric:** Managed entirely by Android OS — Sudarshan Tech Labs never accesses biometric data
+- **No cloud storage:** Sudarshan Tech Labs operates no backend server
+- **Android sandbox:** Additional protection from Android's application isolation
+- **CSV exports:** Generated on-device and shared via Android's sharing system at your request
 
----
+## Data Retention
 
-## 7. Third-Party Services
-
-SpendWise uses the following on-device libraries. None of these services receive your personal financial data:
-
-| Library | Purpose | Data Sent Externally |
-|---|---|---|
-| Google ML Kit Text Recognition | On-device OCR for receipts | None |
-| SQLCipher | AES-256 database encryption | None |
-| AndroidX libraries | UI & system functionality | None |
-
----
-
-## 8. Data Security
-
-We take security seriously:
-
-- **Database encryption:** AES-256 via SQLCipher
-- **Preference encryption:** AndroidX Security Crypto
-- **App lock:** Optional PIN and biometric authentication
-- **Auto-lock:** Configurable timer locks the App when backgrounded
-- **No network transmission:** Your financial data never leaves your device
+| Data | Retention |
+|---|---|
+| All local financial data | Until you delete it or uninstall the App |
+| Receipt photos | Until you delete them or uninstall the App |
 
 ---
 
-## 9. Data Retention & Deletion
+## Data Sharing
 
-All App data is stored locally on your device. You can delete all data at any time by:
+We do not sell or share your financial data. SpendWise operates entirely offline. The only external service used is:
 
-1. Using the "Clear all data" option in App Settings, or
-2. Uninstalling the App — all local data is permanently deleted
-
-We do not retain any copies of your data.
+- **Google ML Kit Text Recognition** (on-device OCR — no data sent to Google)
 
 ---
 
-## 10. Children's Privacy
+## Permissions Explained
 
-SpendWise is not directed at children under 13 years of age. We do not knowingly collect any information from children. If you believe a child under 13 has used the App, please contact us so we can assist.
-
----
-
-## 11. Changes to This Policy
-
-We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date above and, where appropriate, through an in-app notice.
-
-Continued use of the App after changes become effective constitutes your acceptance of the updated policy.
+| Permission | Why It Is Needed |
+|---|---|
+| `CAMERA` | Capture receipt photos for OCR scanning |
+| `READ_EXTERNAL_STORAGE` (Android 12 and below) | Access files on older Android versions |
+| `WRITE_EXTERNAL_STORAGE` (Android 9 and below) | Save exported CSV files on older Android |
+| `USE_BIOMETRIC` | Enable fingerprint or face unlock to protect financial data |
+| `POST_NOTIFICATIONS` | Send bill reminder notifications |
 
 ---
 
-## 12. Your Rights
+## Your Rights and Controls
 
-Depending on your jurisdiction, you may have rights regarding your data. Since all data is stored exclusively on your device, you have full control at all times — you can view, edit, export, or delete all your data directly within the App.
-
----
-
-## 13. Contact Us
-
-If you have questions or concerns about this Privacy Policy, please contact:
-
-**SudarshanTechLabs**
-Bangkok, Bangkok, Thailand
-Email: sudarshantechlabs@gmail.com
-
-We aim to respond to all enquiries within 5 business days.
+- **Delete individual transactions:** Use the delete function within the App
+- **Delete all data:** Uninstall or go to Android Settings > Apps > SpendWise > Storage > Clear Data
+- **Export your data:** Use the CSV export feature in App Settings
+- **Change or remove PIN/biometric lock:** Go to App Settings > Security
 
 ---
 
-*This policy applies to the SpendWise Android application published by SudarshanTechLabs on Google Play.*
+## Children's Privacy
+
+SpendWise is not directed at children under 13. We do not collect any personal information.
+
+---
+
+## Changes to This Policy
+
+We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+
+- In-app notification
+- Updated policy date on this page
+
+Continued use of SpendWise after changes become effective constitutes your acceptance of the updated policy.
+
+---
+
+## Contact Us
+
+For privacy questions, data access requests, or account deletion:
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+- **Response Time:** Within 48 hours
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Financial transactions | Local only (AES-256 encrypted) | No | App functionality |
+| Receipt photos | Local only | No | OCR scanning |
+| Budget data | Local only (AES-256 encrypted) | No | Budget tracking |
+
+---
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-03-21

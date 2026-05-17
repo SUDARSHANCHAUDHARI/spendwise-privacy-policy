@@ -1,144 +1,221 @@
-# SpendWise — Privacy Policy
+# SpendWise Privacy Policy
 
-**Effective Date:** 2026-03-21
-**Last Updated:** 2026-03-21
-**Version:** 1.0.0
+This repository contains the public privacy policy for SpendWise.
 
-Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
+- Privacy policy: [PRIVACY_POLICY.md](PRIVACY_POLICY.md)
+- Web version: https://sudarshanchaudhari.github.io/spendwise-privacy-policy/
+- Contact: sunny.sudarshan@gmail.com
 
----
+# SpendWise Privacy Policy
 
-SpendWise is a personal expense tracking app for Android. It helps you log transactions, set budgets, scan receipts with OCR, and analyse your spending through charts. All financial data is stored exclusively on your device in an AES-256 encrypted database. Sudarshan Tech Labs does not collect or transmit your financial data.
+**Effective Date:** May 17, 2026
+_Last updated: May 17, 2026_
+**Version:** 1.1.0
 
----
+SpendWise ("we," "our," or "us") is an Android app. SpendWise is a private expense tracker for Android that stores transactions, budgets, categories, notes, receipt photos, and preferences locally. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using SpendWise you agree to the practices described below.
 
-## Data Collection
+## Information We Collect
 
-### Data Stored Locally on Your Device
+### Location Data
+- SpendWise does not collect location data.
 
-| Data | Purpose | Storage |
-|---|---|---|
-| Expense transactions (amount, category, date, notes) | Core expense tracking | Room database (SQLCipher AES-256 encrypted) |
-| Budget limits per category | Budget tracking | Room database (SQLCipher AES-256 encrypted) |
-| Transaction categories and tags | Organisation | Room database (SQLCipher AES-256 encrypted) |
-| Receipt photos | OCR scanning and record keeping | App private storage |
-| App preferences and security settings | Personalisation | EncryptedSharedPreferences |
-| PIN configuration (if set) | App lock | EncryptedSharedPreferences |
-| Biometric auth preference | App lock | EncryptedSharedPreferences |
+### Account Information
+- No account is required to use SpendWise.
 
-No financial data is transmitted to Sudarshan Tech Labs or any external server.
+### Device Information
+- Transactions, categories, budgets, notes, dates, receipt photos, biometric-lock settings, notification preferences, and app preferences are stored locally.
 
-### OCR Receipt Scanning
+## How We Use Your Information
 
-When you scan a receipt, SpendWise uses Google ML Kit Text Recognition to extract text. ML Kit processes the image entirely on your device — no image or text is sent to Google or any server.
+### Location Sharing
+- SpendWise does not use your location.
 
----
+### Account Management
+- Track expenses, budgets, categories, and receipts locally.
+- Protect local data with optional biometric app lock where enabled.
 
-## How We Use Your Data
+### Service Improvement
+- Improve local finance workflows.
+- We do not sell, rent, or monetize your financial data.
 
-| Purpose | Data Used |
-|---|---|
-| Log and display expense transactions | Local encrypted transactions |
-| Track budgets and spending limits | Local budget data |
-| Scan receipts for automatic amount entry | On-device OCR (ML Kit) |
-| Display spending charts and trends | Local transaction history |
-| Export transaction history to CSV | Local data (on-device only) |
-| Send bill reminder notifications | Local WorkManager schedules |
-| Lock the App with biometric or PIN | Android Biometric API / local PIN hash |
+## Storage and Retention
 
----
+### Data Storage
+- Financial data and preferences are stored locally on your device, using app storage and local database mechanisms.
+- Receipt photos remain local unless you choose to export/share them.
 
-## Data Storage and Security
+### Data Retention
+- Local expense data remains until you delete it, clear app data, or uninstall the app.
+- Exported files/photos remain wherever you save them.
 
-- **Database:** AES-256 encrypted via SQLCipher — your financial data is encrypted at rest
-- **Preferences:** AES-256 encrypted via Android Security Crypto (EncryptedSharedPreferences)
-- **Receipt photos:** Stored in the App's private directory, inaccessible to other apps
-- **Biometric:** Managed entirely by Android OS — Sudarshan Tech Labs never accesses biometric data
-- **No cloud storage:** Sudarshan Tech Labs operates no backend server
-- **Android sandbox:** Additional protection from Android's application isolation
-- **CSV exports:** Generated on-device and shared via Android's sharing system at your request
-
-## Data Retention
-
-| Data | Retention |
-|---|---|
-| All local financial data | Until you delete it or uninstall the App |
-| Receipt photos | Until you delete them or uninstall the App |
-
----
+### Data Security
+- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- Local data remains on your device or browser unless a feature you use requires a named third-party service.
+- Network communication uses HTTPS/TLS where applicable.
+- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
 ## Data Sharing
 
-We do not sell or share your financial data. SpendWise operates entirely offline. The only external service used is:
+### Family Groups
+- SpendWise does not use MyFamilyTracker-style family groups unless explicitly described in this policy.
+- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
+- You control feature use through the app settings, permissions, account controls, or platform settings.
 
-- **Google ML Kit Text Recognition** (on-device OCR — no data sent to Google)
+### Third Parties
+- No financial data is shared with third parties by Sudarshan Tech Labs.
+- If you export or share content through Android, that sharing is controlled by you.
 
----
+We do **not** share your data with:
+- Data brokers
+- Unrelated advertising networks, unless advertising is explicitly listed above for this app
+- Third parties unrelated to the app features described in this policy
 
-## Permissions Explained
+## Permissions Used
 
-| Permission | Why It Is Needed |
-|---|---|
-| `CAMERA` | Capture receipt photos for OCR scanning |
-| `READ_EXTERNAL_STORAGE` (Android 12 and below) | Access files on older Android versions |
-| `WRITE_EXTERNAL_STORAGE` (Android 9 and below) | Save exported CSV files on older Android |
-| `USE_BIOMETRIC` | Enable fingerprint or face unlock to protect financial data |
-| `POST_NOTIFICATIONS` | Send bill reminder notifications |
+### Required Permissions
 
----
+* **CAMERA**: Used to capture receipt photos.
+* **READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE on older Android versions**: Used for receipt import/export or legacy storage paths.
+* **USE_BIOMETRIC**: Used for optional biometric app lock.
+* **POST_NOTIFICATIONS**: Used for budget or reminder notifications.
+
+### Optional Permissions
+
+* Camera, storage, biometric lock, and notifications are optional features controlled by you.
 
 ## Your Rights and Controls
 
-- **Delete individual transactions:** Use the delete function within the App
-- **Delete all data:** Uninstall or go to Android Settings > Apps > SpendWise > Storage > Clear Data
-- **Export your data:** Use the CSV export feature in App Settings
-- **Change or remove PIN/biometric lock:** Go to App Settings > Security
+### Location Sharing Control
+- No location sharing exists in SpendWise.
 
----
+### Account Management
+- No account is required.
+
+### Data Access
+- You can view, edit, export, or delete local financial data in the app.
+
+### GDPR Rights (EU Users)
+If you are in the European Union, you have additional rights:
+- **Right to Access**: Request a copy of your personal data
+- **Right to Rectification**: Correct inaccurate data
+- **Right to Erasure**: Request deletion of your data
+- **Right to Restrict Processing**: Limit how we use your data
+- **Right to Data Portability**: Receive your data in a portable format
+- **Right to Object**: Object to certain types of processing
+
+To exercise these rights, contact us using the methods in the Contact Us section.
+
+### Permissions
+- You can revoke Android permissions in Android Settings -> Apps -> SpendWise -> Permissions.
+- Browser permissions and storage can be managed in your browser site settings for web apps.
+- Revoking required permissions may prevent related features from functioning.
 
 ## Children's Privacy
 
-SpendWise is not directed at children under 13. We do not collect any personal information.
+- Our app is **not intended for children under 13**.
+- We do not knowingly collect data from children under 13.
+- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
+- Parents and guardians should supervise children's use of apps that store personal content.
 
----
+## Security
+
+- Local data is protected by Android, browser, or operating-system app sandboxing.
+- Network communication uses HTTPS/TLS where applicable.
+- Third-party services named in this policy provide their own security controls and privacy policies.
+- You are responsible for protecting your device, browser profile, and account credentials.
+- We do not sell your personal data.
 
 ## Changes to This Policy
 
-We may update this Privacy Policy from time to time. We will notify you of significant changes via:
+We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
+- Noted in the app release notes or repository when applicable
+- Reflected with a new "Last updated" date
+- Communicated in the app or project page if the change is significant
 
-- In-app notification
-- Updated policy date on this page
-
-Continued use of SpendWise after changes become effective constitutes your acceptance of the updated policy.
-
----
+The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
 
 ## Contact Us
 
-For privacy questions, data access requests, or account deletion:
+If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
 
-- **Email:** sudarshantechlabs@gmail.com
-- **Developer:** sunny.sudarshan@gmail.com
-- **Website:** https://sudarshantechlabs.com
-- **Response Time:** Within 48 hours
+* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/spendwise-privacy-policy
+* **Email:** sunny.sudarshan@gmail.com
+* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/SpendWise
+
+We will respond as quickly as possible, typically within 48 hours.
+
+## Data Deletion
+
+### How to Delete Your Account:
+This app does not require an account. You can delete local app data using the options below:
+
+#### Option 1: In-App Deletion
+1. Open SpendWise
+2. Delete individual entries, reminders, history, or settings where the app provides controls
+3. Or use Android/browser settings to clear app/site data
+4. Uninstalling the app also removes local app-private data
+
+#### Option 2: Email Deletion Request
+Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
+- Subject: "Data Deletion Request - SpendWise"
+- Include: The email/account identifier used in the app, if any
+- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
+
+#### Option 3: Web Deletion
+1. Visit the privacy policy website for contact and support information
+2. For browser apps, clear browser storage for the site
+3. For Android apps, clear storage from Android Settings if you want a full local reset
+
+### What Gets Deleted:
+- Local app data stored by the app
+- Local preferences and reminder/history records
+- Cached data controlled by the app or browser
+- Exported/shared files only if you delete them from where you saved them
+
+### Data Retention After Deletion:
+- **Immediate:** clearing app/site data removes local app-private data from your device/browser
+- **Uninstall:** removes app-private local data from Android apps
+- **Exports/shared files:** remain wherever you saved or sent them until you delete them
+
+To request deletion of your data:
+
+1. Open SpendWise, if installed
+2. Delete local content or clear app/site data where applicable
+3. Contact support via email: sunny.sudarshan@gmail.com
+4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
+5. We will confirm what data can be deleted and complete the request according to the retention terms above
+
+## Firebase and Google Services
+
+This app may use the following services depending on the features you enable and the installed version:
+
+- No third-party cloud service is required for core expense tracking.
+
+Please review relevant third-party privacy policies:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
+- [Google Play Terms](https://play.google.com/about/play-terms/)
+- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+
+## About SpendWise
+
+SpendWise is built with privacy in mind. The app is built with:
+- Kotlin and Jetpack Compose
+- Local database/storage for expense data
+- Camera support for receipts
+- Optional biometric app lock
+
+The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
 
 ---
 
-## Play Store Data Safety Summary
-
-| Data type | Collected | Shared | Purpose |
-|---|---|---|---|
-| Financial transactions | Local only (AES-256 encrypted) | No | App functionality |
-| Receipt photos | Local only | No | OCR scanning |
-| Budget data | Local only (AES-256 encrypted) | No | Budget tracking |
+**Last Updated:** May 17, 2026
 
 ---
 
----
+## Recent Updates (Version 1.1.0 - May 17, 2026)
 
-**This privacy policy complies with:**
-- Google Play Store requirements
-- GDPR (General Data Protection Regulation)
-- CCPA (California Consumer Privacy Act)
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified local financial data, receipts, biometric lock, notifications, and no-cloud behavior.**
 
-**Last reviewed:** 2026-03-21

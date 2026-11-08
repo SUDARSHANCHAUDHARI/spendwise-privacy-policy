@@ -2,7 +2,7 @@
 
 **Effective Date:** 2026-10-23
 **Last Updated:** 2026-11-08
-**Version:** 1.0.0
+**Version:** 1.2.0
 
 Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
@@ -113,6 +113,25 @@ We will update the date above when this policy changes.
 | Device or other IDs | No | No | — |
 
 Declare **"No data collected"** in the Play Console data safety form. The network permission is library-declared and unused, so there is no transfer to disclose.
+
+---
+
+## Recent Updates (Version 1.2.0 - November 8, 2026)
+
+- **Replaced the template text with the policy from the app repository,** keeping its prose verbatim. It was already right about the thing easiest to get wrong here: Google Play lists a network permission because a bundled Google library declares it, and no SpendWise feature uses it.
+- **Removed the boilerplate** claiming protection by "the browser, Firebase, Google, GitHub", and the scaffold location sections, for an app that requests no location.
+- **Made the network-permission explanation specific.** `INTERNET` arrives with `com.google.android.datatransport:transport-backend-cct`, pulled in by Google's ML Kit text-recognition library. The receipt-scanning feature that would use ML Kit is unreachable in this build — its screen is never registered in the navigation graph and nothing navigates to it — so ML Kit is never invoked and nothing is sent.
+- **Stated that the app has no camera and no photo access.** Neither `CAMERA` nor any media permission is in the finished build.
+- **Stated that biometric unlock never exposes biometric data.** Android reports only success or failure and does not make fingerprint or face data available to any app.
+- **Listed the eight library-merged permissions,** since the app declares two while the Play Store shows ten.
+- **Added the scaffolding a published legal document needs** and this copy lacked: effective and updated dates, a version, data retention, and a Play data safety table.
+
+---
+
+## Recent Updates (Version 1.1.0 - May 17, 2026)
+
+- **Aligned policy with the shared privacy-policy structure.**
+- **Clarified local financial data, receipts, biometric lock, notifications, and no-cloud behavior.**
 
 ---
 

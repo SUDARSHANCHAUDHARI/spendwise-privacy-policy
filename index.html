@@ -29,7 +29,7 @@
   <main>
     <article>
       <h1>SpendWise — Privacy Policy</h1>
-      <p><strong>Effective Date:</strong> 2026-10-23 <strong>Last Updated:</strong> 2026-11-08 <strong>Version:</strong> 1.0.0</p>
+      <p><strong>Effective Date:</strong> 2026-10-23 <strong>Last Updated:</strong> 2026-11-08 <strong>Version:</strong> 1.2.0</p>
       <p>Published by <strong>Sudarshan Tech Labs</strong> | <a href="https://sudarshantechlabs.com">https://sudarshantechlabs.com</a> | sudarshantechlabs@gmail.com</p>
       <hr>
       <p>SpendWise is a personal expense tracker for Android. All financial data is stored only on your device in an encrypted database. The App has no account, no analytics and no purchases, and it never sends your data over the internet. Google Play lists a network permission because a Google library bundled in the App declares it; no SpendWise feature uses it.</p>
@@ -111,6 +111,23 @@
       <tr><td>Device or other IDs</td><td>No</td><td>No</td><td>—</td></tr>
       </tbody></table>
       <p>Declare <strong>"No data collected"</strong> in the Play Console data safety form. The network permission is library-declared and unused, so there is no transfer to disclose.</p>
+      <hr>
+      <h2>Recent Updates (Version 1.2.0 - November 8, 2026)</h2>
+      <ul>
+      <li><strong>Replaced the template text with the policy from the app repository,</strong> keeping its prose verbatim. It was already right about the thing easiest to get wrong here: Google Play lists a network permission because a bundled Google library declares it, and no SpendWise feature uses it.</li>
+      <li><strong>Removed the boilerplate</strong> claiming protection by "the browser, Firebase, Google, GitHub", and the scaffold location sections, for an app that requests no location.</li>
+      <li><strong>Made the network-permission explanation specific.</strong> <code>INTERNET</code> arrives with <code>com.google.android.datatransport:transport-backend-cct</code>, pulled in by Google's ML Kit text-recognition library. The receipt-scanning feature that would use ML Kit is unreachable in this build — its screen is never registered in the navigation graph and nothing navigates to it — so ML Kit is never invoked and nothing is sent.</li>
+      <li><strong>Stated that the app has no camera and no photo access.</strong> Neither <code>CAMERA</code> nor any media permission is in the finished build.</li>
+      <li><strong>Stated that biometric unlock never exposes biometric data.</strong> Android reports only success or failure and does not make fingerprint or face data available to any app.</li>
+      <li><strong>Listed the eight library-merged permissions,</strong> since the app declares two while the Play Store shows ten.</li>
+      <li><strong>Added the scaffolding a published legal document needs</strong> and this copy lacked: effective and updated dates, a version, data retention, and a Play data safety table.</li>
+      </ul>
+      <hr>
+      <h2>Recent Updates (Version 1.1.0 - May 17, 2026)</h2>
+      <ul>
+      <li><strong>Aligned policy with the shared privacy-policy structure.</strong></li>
+      <li><strong>Clarified local financial data, receipts, biometric lock, notifications, and no-cloud behavior.</strong></li>
+      </ul>
       <hr>
       <p><strong>This privacy policy complies with:</strong></p>
       <ul>

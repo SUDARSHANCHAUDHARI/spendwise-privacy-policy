@@ -1,208 +1,130 @@
-# SpendWise Privacy Policy
+# SpendWise — Privacy Policy
 
-**Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
-**Version:** 1.1.0
+**Effective Date:** 2026-10-23
+**Last Updated:** 2026-11-08
+**Version:** 1.2.0
 
-SpendWise ("we," "our," or "us") is an Android app. SpendWise is a private expense tracker for Android that stores transactions, budgets, categories, notes, receipt photos, and preferences locally. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using SpendWise you agree to the practices described below.
-
-## Information We Collect
-
-### Location Data
-- SpendWise does not collect location data.
-
-### Account Information
-- No account is required to use SpendWise.
-
-### Device Information
-- Transactions, categories, budgets, notes, dates, receipt photos, biometric-lock settings, notification preferences, and app preferences are stored locally.
-
-## How We Use Your Information
-
-### Location Sharing
-- SpendWise does not use your location.
-
-### Account Management
-- Track expenses, budgets, categories, and receipts locally.
-- Protect local data with optional biometric app lock where enabled.
-
-### Service Improvement
-- Improve local finance workflows.
-- We do not sell, rent, or monetize your financial data.
-
-## Storage and Retention
-
-### Data Storage
-- Financial data and preferences are stored locally on your device, using app storage and local database mechanisms.
-- Receipt photos remain local unless you choose to export/share them.
-
-### Data Retention
-- Local expense data remains until you delete it, clear app data, or uninstall the app.
-- Exported files/photos remain wherever you save them.
-
-### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
-- Local data remains on your device or browser unless a feature you use requires a named third-party service.
-- Network communication uses HTTPS/TLS where applicable.
-- You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
-
-## Data Sharing
-
-### Family Groups
-- SpendWise does not use family groups unless explicitly described in this policy.
-- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
-- You control feature use through the app settings, permissions, account controls, or platform settings.
-
-### Third Parties
-- No financial data is shared with third parties by Sudarshan Tech Labs.
-- If you export or share content through Android, that sharing is controlled by you.
-
-We do **not** share your data with:
-- Data brokers
-- Unrelated advertising networks, unless advertising is explicitly listed above for this app
-- Third parties unrelated to the app features described in this policy
-
-## Permissions Used
-
-### Required Permissions
-
-* **CAMERA**: Used to capture receipt photos.
-* **READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE on older Android versions**: Used for receipt import/export or legacy storage paths.
-* **USE_BIOMETRIC**: Used for optional biometric app lock.
-* **POST_NOTIFICATIONS**: Used for budget or reminder notifications.
-
-### Optional Permissions
-
-* Camera, storage, biometric lock, and notifications are optional features controlled by you.
-
-## Your Rights and Controls
-
-### Location Sharing Control
-- No location sharing exists in SpendWise.
-
-### Account Management
-- No account is required.
-
-### Data Access
-- You can view, edit, export, or delete local financial data in the app.
-
-### GDPR Rights (EU Users)
-If you are in the European Union, you have additional rights:
-- **Right to Access**: Request a copy of your personal data
-- **Right to Rectification**: Correct inaccurate data
-- **Right to Erasure**: Request deletion of your data
-- **Right to Restrict Processing**: Limit how we use your data
-- **Right to Data Portability**: Receive your data in a portable format
-- **Right to Object**: Object to certain types of processing
-
-To exercise these rights, contact us using the methods in the Contact Us section.
-
-### Permissions
-- You can revoke Android permissions in Android Settings -> Apps -> SpendWise -> Permissions.
-- Browser permissions and storage can be managed in your browser site settings for web apps.
-- Revoking required permissions may prevent related features from functioning.
-
-## Children's Privacy
-
-- Our app is **not intended for children under 13**.
-- We do not knowingly collect data from children under 13.
-- If you are a parent or guardian and believe your child has provided personal information, please contact us to request deletion.
-- Parents and guardians should supervise children's use of apps that store personal content.
-
-## Security
-
-- Local data is protected by Android, browser, or operating-system app sandboxing.
-- Network communication uses HTTPS/TLS where applicable.
-- Third-party services named in this policy provide their own security controls and privacy policies.
-- You are responsible for protecting your device, browser profile, and account credentials.
-- We do not sell your personal data.
-
-## Changes to This Policy
-
-We may update this Privacy Policy to reflect new features, legal requirements, or changes in our practices. Significant changes will be:
-- Noted in the app release notes or repository when applicable
-- Reflected with a new "Last updated" date
-- Communicated in the app or project page if the change is significant
-
-The "Last updated" date at the top of this policy indicates when revisions occurred. Continued use of the app after changes constitutes acceptance of the updated policy.
-
-## Contact Us
-
-If you have questions about this Privacy Policy, wish to request data deletion, or have privacy concerns:
-
-* **GitHub Repository:** https://github.com/SUDARSHANCHAUDHARI/spendwise-privacy-policy
-* **Email:** sunny.sudarshan@gmail.com
-* **Main App Repository:** https://github.com/SUDARSHANCHAUDHARI/SpendWise
-
-We will respond as quickly as possible, typically within 48 hours.
-
-## Data Deletion
-
-### How to Delete Your Account:
-This app does not require an account. You can delete local app data using the options below:
-
-#### Option 1: In-App Deletion
-1. Open SpendWise
-2. Delete individual entries, reminders, history, or settings where the app provides controls
-3. Or use Android/browser settings to clear app/site data
-4. Uninstalling the app also removes local app-private data
-
-#### Option 2: Email Deletion Request
-Send an email to: **support@sudarshantechlabs.com** or **sunny.sudarshan@gmail.com**
-- Subject: "Data Deletion Request - SpendWise"
-- Include: The email/account identifier used in the app, if any
-- We will process deletion requests as quickly as possible, typically within 48 hours for acknowledgement
-
-#### Option 3: Web Deletion
-1. Visit the privacy policy website for contact and support information
-2. For browser apps, clear browser storage for the site
-3. For Android apps, clear storage from Android Settings if you want a full local reset
-
-### What Gets Deleted:
-- Local app data stored by the app
-- Local preferences and reminder/history records
-- Cached data controlled by the app or browser
-- Exported/shared files only if you delete them from where you saved them
-
-### Data Retention After Deletion:
-- **Immediate:** clearing app/site data removes local app-private data from your device/browser
-- **Uninstall:** removes app-private local data from Android apps
-- **Exports/shared files:** remain wherever you saved or sent them until you delete them
-
-To request deletion of your data:
-
-1. Open SpendWise, if installed
-2. Delete local content or clear app/site data where applicable
-3. Contact support via email: sunny.sudarshan@gmail.com
-4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
-5. We will confirm what data can be deleted and complete the request according to the retention terms above
-
-## Firebase and Google Services
-
-This app may use the following services depending on the features you enable and the installed version:
-
-- No third-party cloud service is required for core expense tracking.
-
-Please review relevant third-party privacy policies:
-
-- [Google Privacy Policy](https://policies.google.com/privacy)
-- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
-- [Google Play Terms](https://play.google.com/about/play-terms/)
-- [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
-
-## About SpendWise
-
-SpendWise is built with privacy in mind. The app is built with:
-- Kotlin and Jetpack Compose
-- Local database/storage for expense data
-- Camera support for receipts
-- Optional biometric app lock
-
-The app collects only the data needed for the features described in this policy, and local-first features keep data on your device whenever possible.
+Published by **Sudarshan Tech Labs** | https://sudarshantechlabs.com | sudarshantechlabs@gmail.com
 
 ---
 
-**Last Updated:** May 17, 2026
+SpendWise is a personal expense tracker for Android. All financial data is stored only on your device in an encrypted database. The App has no account, no analytics and no purchases, and it never sends your data over the internet. Google Play lists a network permission because a Google library bundled in the App declares it; no SpendWise feature uses it.
+
+---
+
+## Data Stored on Your Device
+
+| Data | Purpose | Storage |
+|---|---|---|
+| Transactions (amount, category, account, date, notes) | Core expense tracking | Room database encrypted with SQLCipher |
+| Categories, accounts and monthly budgets | Organisation and budget tracking | Room database encrypted with SQLCipher |
+| App preferences (notifications, biometric lock) | Personalisation and app lock | App's private storage |
+
+---
+
+## Exports
+
+If you export your data as CSV, the file is created on your device and shared only with the app you choose.
+
+---
+
+## Data Sharing
+
+We do not collect, sell or share your financial data. It never leaves your device unless you export it.
+
+---
+
+## Permissions
+
+The App itself asks for two permissions:
+
+| Permission | Why |
+|---|---|
+| `POST_NOTIFICATIONS` | Budget alerts, if you turn them on |
+| `USE_BIOMETRIC` | Optional fingerprint/face unlock |
+
+Biometric unlock is handled entirely by Android. The App is told only whether authentication succeeded — it never receives your fingerprint or face data, and Android does not make that data available to any app.
+
+### Permissions added by Android libraries
+
+The finished app carries eight more, declared by libraries rather than by the App's own code. They still appear in the permission list you see on the Play Store:
+
+| Permission | Comes from | What it does |
+|---|---|---|
+| `INTERNET` | `com.google.android.datatransport:transport-backend-cct`, pulled in by Google's ML Kit text-recognition library | **No SpendWise feature uses the network.** The library that declares it is never invoked, so nothing is sent. See the note below |
+| `ACCESS_NETWORK_STATE` | the same transport library | Lets a library check whether a network exists; grants no ability to use one |
+| `USE_FINGERPRINT` | `androidx.biometric` | The older-Android counterpart of `USE_BIOMETRIC` |
+| `WAKE_LOCK`, `RECEIVE_BOOT_COMPLETED`, `FOREGROUND_SERVICE`, `BIND_JOB_SERVICE` | WorkManager | How Android schedules and re-registers the budget-alert checks |
+| `DUMP` | a build-time library | Diagnostic permission. Android grants it only to system apps, so it has no effect here |
+
+### Why `INTERNET` is listed but unused
+
+The App bundles Google's ML Kit text-recognition library, intended for scanning a receipt photo. That feature is **not reachable in this build**: its screen is never registered in the navigation graph, nothing navigates to it, and the App declares no camera or photo permission. ML Kit is therefore never invoked, no image is ever processed, and the transport library that would report ML Kit usage to Google never runs.
+
+**The App has no camera access and no access to your photos.** Neither `CAMERA` nor any media permission appears in the finished app.
+
+---
+
+## Data Retention
+
+| Data | Retention |
+|---|---|
+| All local app data | Until you delete it, clear app data, or uninstall the App |
+
+---
+
+## Your Controls
+
+- **Delete a transaction:** swipe to delete in the App.
+- **Delete all data:** uninstall the App, or go to Android Settings > Apps > SpendWise > Storage > Clear Data.
+
+Because your data exists only on your device and we hold no copy, a data access or deletion request to us would return nothing — you already have the only copy.
+
+---
+
+## Children's Privacy
+
+SpendWise is not directed at children under 13. We collect no personal information from anyone.
+
+---
+
+## Changes to This Policy
+
+We will update the date above when this policy changes.
+
+---
+
+## Contact
+
+- **Email:** sudarshantechlabs@gmail.com
+- **Developer:** sunny.sudarshan@gmail.com
+- **Website:** https://sudarshantechlabs.com
+
+---
+
+## Play Store Data Safety Summary
+
+| Data type | Collected | Shared | Purpose |
+|---|---|---|---|
+| Financial info (transactions, budgets) | Local only, never collected | No | App functionality |
+| Personal info | No | No | — |
+| Photos | No — no camera or media permission | No | — |
+| Crash logs | No | No | — |
+| Device or other IDs | No | No | — |
+
+Declare **"No data collected"** in the Play Console data safety form. The network permission is library-declared and unused, so there is no transfer to disclose.
+
+---
+
+## Recent Updates (Version 1.2.0 - November 8, 2026)
+
+- **Replaced the template text with the policy from the app repository,** keeping its prose verbatim. It was already right about the thing easiest to get wrong here: Google Play lists a network permission because a bundled Google library declares it, and no SpendWise feature uses it.
+- **Removed the boilerplate** claiming protection by "the browser, Firebase, Google, GitHub", and the scaffold location sections, for an app that requests no location.
+- **Made the network-permission explanation specific.** `INTERNET` arrives with `com.google.android.datatransport:transport-backend-cct`, pulled in by Google's ML Kit text-recognition library. The receipt-scanning feature that would use ML Kit is unreachable in this build — its screen is never registered in the navigation graph and nothing navigates to it — so ML Kit is never invoked and nothing is sent.
+- **Stated that the app has no camera and no photo access.** Neither `CAMERA` nor any media permission is in the finished build.
+- **Stated that biometric unlock never exposes biometric data.** Android reports only success or failure and does not make fingerprint or face data available to any app.
+- **Listed the eight library-merged permissions,** since the app declares two while the Play Store shows ten.
+- **Added the scaffolding a published legal document needs** and this copy lacked: effective and updated dates, a version, data retention, and a Play data safety table.
 
 ---
 
@@ -210,3 +132,16 @@ The app collects only the data needed for the features described in this policy,
 
 - **Aligned policy with the shared privacy-policy structure.**
 - **Clarified local financial data, receipts, biometric lock, notifications, and no-cloud behavior.**
+
+---
+
+**This privacy policy complies with:**
+- Google Play Store requirements
+- GDPR (General Data Protection Regulation)
+- CCPA (California Consumer Privacy Act)
+
+**Last reviewed:** 2026-11-08
+
+---
+
+This is the published policy, served at https://sudarshanchaudhari.github.io/spendwise-privacy-policy/ from the `main` branch of this repository. `index.html` carries the same content for the web and must be updated alongside this file. The copy in the [SpendWise app repository](https://github.com/SUDARSHANCHAUDHARI/SpendWise/blob/main/PRIVACY_POLICY.md) is kept identical.
